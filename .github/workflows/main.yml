@@ -1,23 +1,23 @@
-
 name: python program with dependencies
-on:
- push:
-  branches: 
-    -main 
-jobs:
-   Extract_data:
-     runs-on: ubuntu -latest
-     
-     steps:
 
-       - name: checkout code
-         uses: actions/checkout@v2
-      
-       - name: show python version
-         run: python --version
-      
-       - name: install dependencies
-         run: pip install pandas
-      
-       - name: run python program
-         run: python extract_data.py
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  extract_data:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Show Python version
+        run: python --version
+
+      - name: Install dependencies
+        run: pip install pandas
+
+      - name: Run Python program
+        run: python extract_data.py
