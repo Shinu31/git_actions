@@ -12,7 +12,7 @@ jobs:
        uses:action/checkout@v2
       -name :show python version
        run: python --version
-      -name:install dependens=cies
+      -name:install dependencies
         run: pip install pandas
       -name:run python program
        run: python extract_data.py
