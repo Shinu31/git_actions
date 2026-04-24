@@ -3,5 +3,5 @@ import pandas as pd
 data = {"id" :[1,2,3],
         "name" : ["Alice", "Bob", "Charlie"],
         "age" : [25, 30, 35]}
-df = pd.Dataframe(data)
+df = pd.DataFrame(data)
 print(df)
